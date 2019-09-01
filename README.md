@@ -26,7 +26,10 @@ If you want to compile and run the example, you can create a build folder first,
 ```
 mkdir build; cd build; rm -rf *
 ```
-
+## win cmake 编译
+1. libfacedetection用cmake-gui配置，勾选avx2和DEMO，不勾选int8和neon，  
+2. 配置之后用vs打开，注意在facedetection、facedetection_shared、fdt_demo三个项目的  
+   项目属性->C++->代码生成里开启AVX2和快速浮点。
 ### Use Tengine to Speedup the detection on ARM
 The model has been added to [Tengine](https://github.com/OAID/Tengine). Tengine, developed by OPEN AI LAB, is a lite, high-performance, and modular inference engine for embedded device. 
 
