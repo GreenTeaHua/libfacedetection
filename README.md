@@ -63,15 +63,15 @@ make
 
 ## CNN-based Face Detection on Windows
 
-| Method             |Time          | FPS         |Time          | FPS         |
+| Method             |Time          | FPS         |Time          | FPS         |i5-7300@2.5GHz
 |--------------------|--------------|-------------|--------------|-------------|
 |                    |  X64         |X64          |  X64         |X64          |
 |                    |Single-thread |Single-thread|Multi-thread  |Multi-thread |
 |OpenCV Haar+AdaBoost (640x480)|   --         | --          | 12.33ms      |   81.1      |
-|cnn (CPU, 640x480)  |  64.21ms     | 15.57       | 15.59ms      |   64.16     |
-|cnn (CPU, 320x240)  |  15.23ms     | 65.68       |  3.99ms      |  250.40     |
-|cnn (CPU, 160x120)  |   3.47ms     | 288.08      |  0.95ms      | 1052.20     |
-|cnn (CPU, 128x96)   |   2.35ms     | 425.95      |  0.64ms      | 1562.10     |
+|cnn (CPU, 640x480)  |  64.21ms     | 15.57       | 15.59ms      |   64.16     |200 ms
+|cnn (CPU, 320x240)  |  15.23ms     | 65.68       |  3.99ms      |  250.40     |47 ms
+|cnn (CPU, 160x120)  |   3.47ms     | 288.08      |  0.95ms      | 1052.20     |17 ms
+|cnn (CPU, 128x96)   |   2.35ms     | 425.95      |  0.64ms      | 1562.10     |13 ms
 
 * OpenCV Haar+AdaBoost runs with minimal face size 48x48
 * Face detection only, and no landmark detection included
