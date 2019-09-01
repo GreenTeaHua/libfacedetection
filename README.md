@@ -64,7 +64,7 @@ make
 ## CNN-based Face Detection on Windows
 
 | Method             |Time          | FPS         |Time          | FPS         |i5-7300@2.5GHz  |
-|--------------------|--------------|-------------|--------------|-------------| |
+|--------------------|--------------|-------------|--------------|-------------|----------------|
 |                    |  X64         |X64          |  X64         |X64          | |
 |                    |Single-thread |Single-thread|Multi-thread  |Multi-thread | |
 |OpenCV Haar+AdaBoost (640x480)|   --         | --          | 12.33ms      |   81.1      | |
@@ -81,7 +81,7 @@ make
 ## CNN-based Face Detection on ARM Linux (Raspberry Pi 3 B+)
 
 | Method             |Time          | FPS         |Time          | FPS         |tx2 |
-|--------------------|--------------|-------------|--------------|-------------| |
+|--------------------|--------------|-------------|--------------|-------------|----|
 |                    |Single-thread |Single-thread|Multi-thread  |Multi-thread | |
 |cnn (CPU, 640x480)  |  512.04ms    |  1.95       |  174.89ms    |   5.72      | |
 |cnn (CPU, 320x240)  |  123.47ms    |  8.10       |   42.13ms    |  23.74      | |
